@@ -190,9 +190,7 @@ p {
   -webkit-transition-delay: 0s;
           transition-delay: 0s;
 }
-
-.modal__btn--icon:hover,
-.modal__btn--icon:focus {
+.modal__btn--icon:hover, .modal__btn--icon:focus {
   fill: --akcent-color;
 }
 
@@ -232,6 +230,9 @@ p {
   position: relative;
   margin-bottom: 10px;
 }
+.register__wrap:last-child {
+  margin-bottom: 0;
+}
 
 .register__field {
   position: relative;
@@ -252,10 +253,6 @@ p {
           transition-delay: 0s;
 }
 
-.register__wrap:last-child {
-  margin-bottom: 0;
-}
-
 .register__input,
 .register__message {
   border: solid 1px --border-form;
@@ -271,16 +268,16 @@ p {
   -webkit-transition-delay: 0s;
           transition-delay: 0s;
 }
+.register__input:focus, .register__input:focus,
+.register__message:focus,
+.register__message:focus {
+  border: solid 1px --akcent-color;
+}
 
 .register__message {
   resize: none;
   height: 120px;
   padding: 10px;
-}
-
-.register__input:focus,
-.register__message:focus {
-  border: solid 1px --akcent-color;
 }
 
 .register__input:focus-within + .register__icon {
@@ -537,6 +534,9 @@ textarea::placeholder {
   letter-spacing: 0.02em;
   color: var(--main-txt-cl);
 }
+.nav__item:hover, .nav__item:focus {
+  color: var(--logo-blue-txt-cl);
+}
 
 .nav__item--studio {
   font-weight: 500;
@@ -563,11 +563,6 @@ textarea::placeholder {
   background-color: var(--logo-blue-txt-cl);
 }
 
-.nav__item:hover,
-.nav__item:focus {
-  color: var(--logo-blue-txt-cl);
-}
-
 .header__link,
 .header__tel {
   font-weight: 500;
@@ -576,9 +571,9 @@ textarea::placeholder {
   letter-spacing: 0.02em;
   color: var(--secondary-txt-cl);
 }
-
-.header__link:hover,
-.header__link:focus {
+.header__link:hover, .header__link:focus,
+.header__tel:hover,
+.header__tel:focus {
   color: var(--logo-blue-txt-cl);
 }
 
@@ -589,9 +584,7 @@ textarea::placeholder {
   letter-spacing: 0.02em;
   color: var(--secondary-txt-cl);
 }
-
-.header__tel:hover,
-.header__tel:focus {
+.header__tel:hover, .header__tel:focus {
   color: var(--logo-blue-txt-cl);
 }
 
@@ -641,16 +634,16 @@ textarea::placeholder {
   -webkit-transition-delay: 0s;
           transition-delay: 0s;
 }
+.register__input:focus, .register__input:focus,
+.register__message:focus,
+.register__message:focus {
+  border: solid 1px var(--akcent-color);
+}
 
 .register__message {
   resize: none;
   height: 120px;
   padding: 10px;
-}
-
-.register__input:focus,
-.register__message:focus {
-  border: solid 1px var(--akcent-color);
 }
 
 .register__input:focus-within + .register__icon {
@@ -904,6 +897,10 @@ textarea::placeholder {
   -webkit-transition: color var(--animation), background-color var(--animation);
   transition: color var(--animation), background-color var(--animation);
 }
+.social__link:hover, .social__link:focus {
+  background-color: var(--blue-bg-cl);
+  outline: none;
+}
 
 .social__list {
   gap: 10px;
@@ -925,12 +922,6 @@ textarea::placeholder {
   fill: var(--social-icon-color);
 }
 
-.social__link:hover,
-.social__link:focus {
-  background-color: var(--blue-bg-cl);
-  outline: none;
-}
-
 .social__link:hover .social__icon {
   fill: var(--white-txt-cl);
 }
@@ -941,12 +932,6 @@ textarea::placeholder {
 
 .benefits {
   padding-bottom: 94px;
-}
-.benefits__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 30px;
 }
 
 .benefits__text {
@@ -1037,9 +1022,7 @@ textarea::placeholder {
   -webkit-transition: color var(--animation), border-color var(--animation);
   transition: color var(--animation), border-color var(--animation);
 }
-
-.clients__icon:hover,
-.clients__icon:focus {
+.clients__icon:hover, .clients__icon:focus {
   fill: var(--akcent-color);
   border-color: var(--akcent-color);
   border: 1px solid var(--akcent-color);
@@ -1098,9 +1081,7 @@ textarea::placeholder {
   letter-spacing: 0.03em;
   color: var(--logo-white-txt-cl);
 }
-
-.footer__text:hover,
-.footer__text:focus {
+.footer__text:hover, .footer__text:focus {
   color: var(--logo-blue-txt-cl);
 }
 
@@ -1116,9 +1097,7 @@ textarea::placeholder {
   -webkit-transition: color var(--animation), background-color var(--animation);
   transition: color var(--animation), background-color var(--animation);
 }
-
-.footer__link:hover,
-.footer__link:focus {
+.footer__link:hover, .footer__link:focus {
   color: var(--logo-blue-txt-cl);
 }
 
@@ -1131,17 +1110,15 @@ textarea::placeholder {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
+.footer__tel:hover, .footer__tel:focus {
+  color: var(--logo-blue-txt-cl);
+}
 
 .footer__text,
 .footer__link,
 .footer__tel {
   width: 231px;
   height: 21px;
-}
-
-.footer__tel:hover,
-.footer__tel:focus {
-  color: var(--logo-blue-txt-cl);
 }
 
 /* Футер. Правый блок */
@@ -1184,6 +1161,13 @@ textarea::placeholder {
   -webkit-transition: color var(--animation), background-color var(--animation);
   transition: color var(--animation), background-color var(--animation);
 }
+.footer__social--link:hover, .footer__social--link:focus {
+  fill: var(--akcent-color);
+  border-color: var(--akcent-color);
+  border: 1px solid var(--akcent-color);
+  background-color: var(--blue-bg-cl);
+  outline: none;
+}
 
 .footer__title {
   display: -webkit-box;
@@ -1205,15 +1189,6 @@ textarea::placeholder {
 
 .footer__icon {
   fill: var(--white-txt-cl);
-}
-
-.footer__social--link:hover,
-.footer__social--link:focus {
-  fill: var(--akcent-color);
-  border-color: var(--akcent-color);
-  border: 1px solid var(--akcent-color);
-  background-color: var(--blue-bg-cl);
-  outline: none;
 }
 
 /* Футер підписатися*/
@@ -1243,9 +1218,7 @@ textarea::placeholder {
   -webkit-transition: color var(--animation), border-color var(--animation);
   transition: color var(--animation), border-color var(--animation);
 }
-
-.subscription__input:hover,
-.subscription__input:focus {
+.subscription__input:hover, .subscription__input:focus {
   border: 1px solid var(--akcent-color);
   border-color: var(--akcent-color);
   outline: none;
@@ -1371,6 +1344,11 @@ textarea::placeholder {
   transition: color var(--animation), background-color var(--animation), -webkit-box-shadow var(--animation);
   transition: color var(--animation), background-color var(--animation), box-shadow var(--animation);
   transition: color var(--animation), background-color var(--animation), box-shadow var(--animation), -webkit-box-shadow var(--animation);
+  cursor: pointer;
+}
+.portfolio__btn:hover, .portfolio__btn:focus {
+  background: var(--blue-bg-cl);
+  color: var(--white-txt-cl);
 }
 
 .portfolio__list,
@@ -1385,12 +1363,6 @@ textarea::placeholder {
   background: var(--blue-bg-cl);
   border-radius: 4px;
   border: none;
-}
-
-.portfolio__btn:hover,
-.portfolio__btn:focus {
-  background: var(--blue-bg-cl);
-  color: var(--white-txt-cl);
 }
 
 .portfolio__title {
@@ -1427,11 +1399,6 @@ textarea::placeholder {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--secondary-txt-cl);
-}
-
-.portfolio__link--cards:hover,
-.portfolio__link--cards:focus {
-  color: var(--logo-blue-txt-cl);
 }
 
 .portfolio__cards--list {
@@ -1490,6 +1457,18 @@ textarea::placeholder {
   width: 370px;
   background: var(--white-bg-cl);
   border: 1px solid var(--border-cards-color);
+  -webkit-transition: -webkit-transform var(--animation);
+  transition: -webkit-transform var(--animation);
+  transition: transform var(--animation);
+  transition: transform var(--animation), -webkit-transform var(--animation);
+  -webkit-transition: color var(--animation), background-color var(--animation), -webkit-box-shadow var(--animation);
+  transition: color var(--animation), background-color var(--animation), -webkit-box-shadow var(--animation);
+  transition: color var(--animation), background-color var(--animation), box-shadow var(--animation);
+  transition: color var(--animation), background-color var(--animation), box-shadow var(--animation), -webkit-box-shadow var(--animation);
+}
+.portfolio__item--cards:hover {
+  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio__cards--name {
@@ -1497,9 +1476,4 @@ textarea::placeholder {
   padding-bottom: 20px;
   padding-right: 24px;
   padding-left: 24px;
-}
-
-.portfolio__item--cards:hover {
-  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }/*# sourceMappingURL=main.css.map */

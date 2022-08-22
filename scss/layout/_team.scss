@@ -65,7 +65,14 @@
     background-color: var(--white-bg-cl);
     border-radius: 50%;
     transition: color var(--animation),
-        background-color var(--animation);
+    background-color var(--animation);
+
+&:hover,
+&:focus {
+    background-color: var(--blue-bg-cl);
+    outline: none;
+    
+    }
 
 }
 
@@ -84,12 +91,12 @@
     fill: var(--social-icon-color);
 }
 
-.social__link:hover,
-.social__link:focus {
-    background-color: var(--blue-bg-cl);
-    outline: none;
+// .social__link:hover,
+// .social__link:focus {
+//     background-color: var(--blue-bg-cl);
+//     outline: none;
 
-}
+// }
 
 .social__link:hover .social__icon {
     fill: var(--white-txt-cl);

@@ -36,12 +36,17 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--logo-white-txt-cl);
+
+ &:hover,
+ &:focus {
+    color: var(--logo-blue-txt-cl);
+    }
 }
 
-.footer__text:hover,
-.footer__text:focus {
-    color: var(--logo-blue-txt-cl);
-}
+// .footer__text:hover,
+// .footer__text:focus {
+//     color: var(--logo-blue-txt-cl);
+// }
 
 .footer__link {
     margin-bottom: 9px;
@@ -53,13 +58,19 @@
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
     transition: color var(--animation),
-        background-color var(--animation);
+    background-color var(--animation);
+
+&:hover,
+    &:focus {
+        color: var(--logo-blue-txt-cl);
+    }
+
 }
 
-.footer__link:hover,
-.footer__link:focus {
-    color: var(--logo-blue-txt-cl);
-}
+// .footer__link:hover,
+// .footer__link:focus {
+//     color: var(--logo-blue-txt-cl);
+// }
 
 .footer__tel {
     font-family: 'Roboto';
@@ -69,6 +80,11 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+
+&:hover,
+&:focus {
+    color: var(--logo-blue-txt-cl);
+    }
 }
 
 .footer__text,
@@ -78,10 +94,10 @@
     height: 21px;
 }
 
-.footer__tel:hover,
-.footer__tel:focus {
-    color: var(--logo-blue-txt-cl);
-}
+// .footer__tel:hover,
+// .footer__tel:focus {
+//     color: var(--logo-blue-txt-cl);
+// }
 
 
 /* Футер. Правый блок */
@@ -112,7 +128,16 @@
     border-radius: 50%;
     margin-top: 20px;
     transition: color var(--animation),
-        background-color var(--animation);
+    background-color var(--animation);
+
+&:hover,
+&:focus {
+    fill: var(--akcent-color);
+    border-color: var(--akcent-color);
+    border: 1px solid var(--akcent-color);
+    background-color: var(--blue-bg-cl);
+    outline: none;
+    }
 }
 
 .footer__title {
@@ -133,14 +158,14 @@
     fill: var(--white-txt-cl);
 }
 
-.footer__social--link:hover,
-.footer__social--link:focus {
-    fill: var(--akcent-color);
-    border-color: var(--akcent-color);
-    border: 1px solid var(--akcent-color);
-    background-color: var(--blue-bg-cl);
-    outline: none;
-}
+// .footer__social--link:hover,
+// .footer__social--link:focus {
+//     fill: var(--akcent-color);
+//     border-color: var(--akcent-color);
+//     border: 1px solid var(--akcent-color);
+//     background-color: var(--blue-bg-cl);
+//     outline: none;
+// }
 
 /* Футер підписатися*/
 
@@ -164,16 +189,23 @@
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
     transition: color var(--animation),
-        border-color var(--animation);
-}
+    border-color var(--animation);
 
-.subscription__input:hover,
-.subscription__input:focus {
+&:hover,
+&:focus {
     border: 1px solid var(--akcent-color);
     border-color: var(--akcent-color);
     outline: none;
-
+    }
 }
+
+// .subscription__input:hover,
+// .subscription__input:focus {
+//     border: 1px solid var(--akcent-color);
+//     border-color: var(--akcent-color);
+//     outline: none;
+
+// }
 
 .subscription__btn {
     display: flex;

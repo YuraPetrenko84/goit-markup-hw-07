@@ -27,17 +27,25 @@
     border-radius: 4px;
     fill: var(--social-icon-color);
     transition: color var(--animation),
-        border-color var(--animation);
-}
+    border-color var(--animation);
 
-
-.clients__icon:hover,
-.clients__icon:focus {
+&:hover,
+&:focus {
     fill: var(--akcent-color);
     border-color: var(--akcent-color);
     border: 1px solid var(--akcent-color);
     outline: none;
+    }
 }
+
+
+// .clients__icon:hover,
+// .clients__icon:focus {
+//     fill: var(--akcent-color);
+//     border-color: var(--akcent-color);
+//     border: 1px solid var(--akcent-color);
+//     outline: none;
+// }
 
 .clients__title {
     font-family: 'Roboto';

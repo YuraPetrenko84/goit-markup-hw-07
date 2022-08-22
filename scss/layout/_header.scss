@@ -87,6 +87,11 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--main-txt-cl);
+
+&:hover,
+&:focus {
+    color: var(--logo-blue-txt-cl);
+    }
 }
 
 .nav__item--studio {
@@ -114,10 +119,10 @@
     background-color: var(--logo-blue-txt-cl);
 }
 
-.nav__item:hover,
-.nav__item:focus {
-    color: var(--logo-blue-txt-cl);
-}
+// .nav__item:hover,
+// .nav__item:focus {
+//     color: var(--logo-blue-txt-cl);
+// }
 
 .header__link,
 .header__tel {
@@ -126,12 +131,17 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--secondary-txt-cl);
-}
 
-.header__link:hover,
-.header__link:focus {
+&:hover,
+&:focus {
     color: var(--logo-blue-txt-cl);
 }
+}
+
+// .header__link:hover,
+// .header__link:focus {
+//     color: var(--logo-blue-txt-cl);
+// }
 
 .header__tel {
     font-weight: 500;
@@ -139,12 +149,17 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--secondary-txt-cl);
-}
 
-.header__tel:hover,
-.header__tel:focus {
+&:hover,
+&:focus {
     color: var(--logo-blue-txt-cl);
 }
+}
+
+// .header__tel:hover,
+// .header__tel:focus {
+//     color: var(--logo-blue-txt-cl);
+// }
 
 .overlay {
     max-width: 1600px;
@@ -152,9 +167,9 @@
     margin-right: auto;
     margin-left: auto;
     background-image: linear-gradient(to right,
-            rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)),
-        url(../images/studio/imghero.jpg);
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)),
+    url(../images/studio/imghero.jpg);
     background-position: center;
     background-color: var(--overlay-bg-cl);
 }
