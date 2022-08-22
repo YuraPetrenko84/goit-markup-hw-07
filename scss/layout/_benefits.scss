@@ -1,5 +1,15 @@
+// .benefits {
+//     @extend %section;
+// }
+
 .benefits {
     padding-bottom: 94px;
+
+    &__list {
+            display: flex;
+            gap: 30px;
+        }
+    
 }
 
 

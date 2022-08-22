@@ -27,9 +27,10 @@
     color: --button-text-color;
     background-color: --focus-color;
    }
-   &.hero__btn {
-       display: flex;
-       margin: 0 auto;
-       margin-bottom: 106px;
-   }
+  
+}
+.hero__btn {
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 106px;
 }
