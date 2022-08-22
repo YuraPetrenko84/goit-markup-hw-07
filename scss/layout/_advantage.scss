@@ -17,11 +17,15 @@
 .advantage__list {
     display: flex;
     gap: 30px;
+
+    &:last-child {
+            margin-right: 0;
+        }
 }
 
-.advantage__list:last-child {
-    margin-right: 0;
-}
+// .advantage__list:last-child {
+//     margin-right: 0;
+// }
 
 .advantage__title {
     margin-bottom: 10px;

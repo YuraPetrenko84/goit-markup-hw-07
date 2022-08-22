@@ -97,13 +97,13 @@ p {
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: transparent;
-  -webkit-transition: color --animation background-color --animation;
-  transition: color --animation background-color --animation;
+  -webkit-transition: color var(--animation) background-color var(--animation);
+  transition: color var(--animation) background-color var(--animation);
 }
 .btn:hover, .btn:focus {
   cursor: pointer;
-  color: --button-text-color;
-  background-color: --focus-color;
+  color: var --button-text-color;
+  background-color: var --focus-color;
 }
 
 .hero__btn {
@@ -112,6 +112,8 @@ p {
   display: flex;
   margin: 0 auto;
   margin-bottom: 106px;
+  background-color: var(--blue-bg-cl);
+  color: var(--white-txt-cl);
 }
 
 .backdrop {
@@ -191,7 +193,7 @@ p {
           transition-delay: 0s;
 }
 .modal__btn--icon:hover, .modal__btn--icon:focus {
-  fill: --akcent-color;
+  fill: var(--akcent-color);
 }
 
 .register__form {
@@ -206,7 +208,7 @@ p {
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
-  color: --main-txt-cl;
+  color: var(--main-txt-cl);
 }
 
 .register__group {
@@ -221,7 +223,7 @@ p {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
-  color: --secondary-txt-cl;
+  color: var(--secondary-txt-cl);
   padding-left: 1px;
 }
 
@@ -255,7 +257,7 @@ p {
 
 .register__input,
 .register__message {
-  border: solid 1px --border-form;
+  border: solid 1px var(--border-form);
   border-radius: 5px;
   width: 100%;
   outline: transparent;
@@ -271,7 +273,7 @@ p {
 .register__input:focus, .register__input:focus,
 .register__message:focus,
 .register__message:focus {
-  border: solid 1px --akcent-color;
+  border: solid 1px var(--akcent-color);
 }
 
 .register__message {
@@ -281,7 +283,7 @@ p {
 }
 
 .register__input:focus-within + .register__icon {
-  fill: --akcent-color;
+  fill: var(--akcent-color);
 }
 
 textarea::-webkit-input-placeholder {
@@ -349,7 +351,7 @@ textarea::placeholder {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: --secondary-txt-cl;
+  color: var(--secondary-txt-cl);
 }
 
 .register__icon--uncheck {
@@ -373,7 +375,7 @@ textarea::placeholder {
 
 .register__agreement--link {
   text-decoration: underline;
-  color: --akcent-color;
+  color: var(--akcent-color);
   text-underline-position: under;
 }
 
@@ -388,9 +390,9 @@ textarea::placeholder {
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.06em;
-  color: --white-txt-cl;
+  color: var(--white-txt-cl);
   cursor: pointer;
-  background-color: --akcent-color;
+  background-color: var(--akcent-color);
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -406,7 +408,7 @@ textarea::placeholder {
 }
 
 .logo-accent {
-  color: --logo-black-txt-cl;
+  color: var --logo-black-txt-cl;
 }
 
 .benefits__text {
@@ -416,7 +418,7 @@ textarea::placeholder {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-  color: --main-txt-cl;
+  color: var(--main-txt-cl);
 }
 
 .header__border {
@@ -791,7 +793,6 @@ textarea::placeholder {
   display: flex;
   gap: 30px;
 }
-
 .advantage__list:last-child {
   margin-right: 0;
 }

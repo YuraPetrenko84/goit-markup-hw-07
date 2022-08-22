@@ -62,7 +62,7 @@
 
     &:hover,
     &:focus {
-            fill: --akcent-color;
+            fill: var(--akcent-color);
         }
 }
 
@@ -83,7 +83,7 @@
     line-height: 1.15;
     text-align: center;
     letter-spacing: 0.03em;
-    color: --main-txt-cl;
+    color: var(--main-txt-cl);
 }
 
 .register__group {
@@ -98,7 +98,7 @@
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.01em;
-    color: --secondary-txt-cl;
+    color: var(--secondary-txt-cl);
     padding-left: 1px;
 }
 
@@ -133,7 +133,7 @@
 
 .register__input,
 .register__message {
-    border: solid 1px --border-form;
+    border: solid 1px var(--border-form);
     border-radius: 5px;
     width: 100%;
     outline: transparent;
@@ -145,7 +145,7 @@
 
     &:focus,
     &:focus {
-        border: solid 1px --akcent-color;
+        border: solid 1px var(--akcent-color);
     }
 
 }
@@ -162,7 +162,7 @@
 // }
 
 .register__input:focus-within+.register__icon {
-    fill: --akcent-color;
+    fill: var(--akcent-color);
 }
 
 textarea::placeholder {
@@ -190,7 +190,7 @@ textarea::placeholder {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: --secondary-txt-cl;
+    color: var(--secondary-txt-cl);
 }
 
 .register__icon--uncheck {
@@ -212,7 +212,7 @@ textarea::placeholder {
 
 .register__agreement--link {
     text-decoration: underline;
-    color: --akcent-color;
+    color: var(--akcent-color);
     text-underline-position: under;
 }
 
@@ -225,9 +225,9 @@ textarea::placeholder {
     font-size: 16px;
     line-height: calc(30 / 16);
     letter-spacing: 0.06em;
-    color: --white-txt-cl;
+    color: var(--white-txt-cl);
     cursor: pointer;
-    background-color: --akcent-color;
+    background-color: var(--akcent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border-color: transparent;
